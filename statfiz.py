@@ -51,11 +51,9 @@ class App(tk.Tk):
         self.tab_control = ttk.Notebook(self)
         self.tab1 = tk.Frame(self.tab_control)
         self.tab2 = tk.Frame(self.tab_control)
-        #self.tab3 = tk.Frame(self.tab_control)
 
         self.tab_control.add(self.tab1, text='Главная')
         self.tab_control.add(self.tab2, text='Модель')
-        #self.tab_control.add(self.tab3, text='Авторы')
         self.tab_control.pack(expand=1, fill='both')
 
         # TAB1 ---------------------------------------------------------------------------------------------------------
@@ -562,48 +560,6 @@ class App(tk.Tk):
         self.tab2_frame25_btn2.pack(side=tk.RIGHT, padx=5, pady=0)
         # --------------------------------------------------------------------------------------------------------------
 
-        # ==============================================================================================================
-
-        # TAB3 =========================================================================================================
-        # self.tab3_frame1 = tk.Frame(self.tab3)
-        # self.tab3_frame1.pack(side=tk.TOP, pady=5, fill=tk.X)
-        # self.tab3_frame11 = tk.Frame(self.tab3_frame1)
-        # self.tab3_frame11.pack(side=tk.LEFT, pady=5)
-        # self.tab3_frame12 = tk.Frame(self.tab3_frame1)
-        # self.tab3_frame12.pack(side=tk.RIGHT, pady=5)
-        # self.tab3_frame2 = tk.Frame(self.tab3)
-        # self.tab3_frame2.pack(side=tk.TOP, pady=5)
-        #
-        # k = 2.5
-
-        # self.img1 = Image.open("images/yu.jpeg")  # yu.jpeg
-        # self.img1 = self.img1.resize((int(self.img1.size[0] / k), int(self.img1.size[1] / k)))
-        # self.tatras1 = ImageTk.PhotoImage(self.img1)
-        # canvas1 = tk.Canvas(self.tab3_frame11, width=self.img1.size[0] + 20, height=self.img1.size[1] + 20)
-        #
-        # canvas1.create_image(10, 10, anchor=tk.NW, image=self.tatras1)
-        # canvas1.pack(fill=tk.BOTH, expand=1, padx=50)
-        #
-        # self.img2 = Image.open("images/se.jpeg")  # se.jpeg
-        # self.img2 = self.img2.resize((int(self.img2.size[0] / k), int(self.img2.size[1] / k)))
-        # self.tatras2 = ImageTk.PhotoImage(self.img2)
-        #
-        # canvas2 = tk.Canvas(self.tab3_frame12, width=self.img2.size[0] + 20, height=self.img2.size[1] + 20)
-        #
-        # canvas2.create_image(10, 10, anchor=tk.NW, image=self.tatras2)
-        # canvas2.pack(fill=tk.BOTH, expand=1, padx=50)
-
-        # self.tab3_lbl1 = tk.Label(self.tab3_frame2, text="Авторы:", font=("Arial Bold", 30))
-        # self.tab3_lbl2 = tk.Label(self.tab3_frame11, text="Мельник Юрий 317", font=("Arial Bold", 30))
-        # self.tab3_lbl3 = tk.Label(self.tab3_frame12, text="Грозный Сергей 317", font=("Arial Bold", 30))
-        # self.tab3_lbl4 = tk.Label(self.tab3_frame2, text="Научный руководитель:", font=("Arial Bold", 30))
-        # self.tab3_lbl5 = tk.Label(self.tab3_frame2, text="Чичигина Ольга Александровна", font=("Arial Bold", 30))
-        #
-        # self.tab3_lbl5.pack(side=tk.BOTTOM, pady=10)
-        # self.tab3_lbl4.pack(side=tk.BOTTOM, pady=10)
-        # self.tab3_lbl3.pack(side=tk.BOTTOM, pady=10)
-        # self.tab3_lbl2.pack(side=tk.BOTTOM, pady=10)
-        # self.tab3_lbl1.pack(side=tk.BOTTOM, pady=10)
         # ==============================================================================================================
 
     def draw_working_area(self):
